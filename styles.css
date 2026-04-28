@@ -1,4 +1,4 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap");
 
 :root {
   --color-plum: #4f3674;
@@ -372,6 +372,35 @@ main {
   font-size: 0.95rem;
 }
 
+.media-figure {
+  margin: 0;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  background: linear-gradient(135deg, rgba(79, 54, 116, 0.95), rgba(184, 160, 217, 0.82));
+  object-fit: cover;
+}
+
+.goal-image,
+.hobby-image {
+  aspect-ratio: 16 / 9;
+}
+
+.portrait-image {
+  aspect-ratio: 3 / 4;
+}
+
+.media-caption {
+  margin: 0.55rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
 .image-placeholder {
   width: 100%;
   min-height: 280px;
@@ -447,7 +476,7 @@ main {
   font-size: 1.5rem;
 }
 
-.about-page .image-placeholder.portrait {
+.about-page .portrait-image {
   border: none;
   min-height: 560px;
 }
@@ -536,13 +565,13 @@ main {
 }
 
 @media (max-width: 900px) {
-  .about-page .image-placeholder.portrait {
+  .about-page .portrait-image {
     min-height: 460px;
   }
 }
 
 @media (max-width: 680px) {
-  .about-page .image-placeholder.portrait {
+  .about-page .portrait-image {
     min-height: 420px;
   }
 }
@@ -892,3 +921,5 @@ main {
     text-align: center;
   }
 }
+
+
